@@ -6,15 +6,15 @@
   <meta name="color-scheme" content="light">
   <title>탱구 젬팝 이메일 로그인 · Studio Sosim</title>
   <style>
-    *{box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,"Noto Sans KR",sans-serif;margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;background:linear-gradient(#174aa6,#55b8eb);color:#17324a}main{width:min(88vw,520px);padding:32px 26px;text-align:center;background:#fffdf7;border:5px solid #69bfe4;border-radius:28px;box-shadow:0 16px 45px #092f6b55}.face{width:112px;height:112px;object-fit:contain;display:block;margin:0 auto 10px}h1{margin:0 0 10px;font-size:clamp(1.6rem,7vw,2.3rem)}.studio{margin:0 0 22px;color:#526b7c;font-weight:800}.button{display:block;margin:24px auto 12px;padding:18px 20px;border-radius:18px;background:#78d4ff;color:#17324a;text-decoration:none;font-size:1.2rem;font-weight:900;border:2px solid #3199c8}.error{color:#a22626;font-weight:700}small{display:block;margin-top:18px;color:#526b7c;line-height:1.55}
+    *{box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,"Noto Sans KR",sans-serif;margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;background:linear-gradient(#174aa6,#55b8eb);color:#17324a}main{width:min(88vw,520px);padding:32px 26px;text-align:center;background:#fffdf7;border:5px solid #69bfe4;border-radius:28px;box-shadow:0 16px 45px #092f6b55}.face{width:112px;height:112px;object-fit:contain;display:block;margin:0 auto 10px}h1{margin:0 0 10px;font-size:clamp(1.6rem,7vw,2.3rem)}.studio{margin:0 0 22px;color:#526b7c;font-weight:800}.button{display:block;margin:24px auto 12px;padding:15px 20px;border-radius:18px;background:#78d4ff;color:#17324a;text-decoration:none;font-size:1.2rem;font-weight:900;border:2px solid #3199c8}.button-en{display:block;margin-top:5px;font-size:.88rem;letter-spacing:.02em}.english{display:block;margin-top:8px;color:#405b70}.error{color:#a22626;font-weight:700}small{display:block;margin-top:18px;color:#526b7c;line-height:1.55}
   </style>
 </head>
 <body><main>
   <img class="face" src="studio-sosim-face.png" alt="Studio Sosim 소심이">
   <h1>탱구 젬팝 이메일 로그인</h1>
   <p class="studio">Studio Sosim · 스튜디오 소심</p>
-  <p id="message">이메일 인증이 완료되었습니다.<br>아래 버튼을 누르면 탱구 젬팝이 열리고 자동으로 로그인됩니다.</p>
-  <a id="open" class="button" href="#">탱구 젬팝 열기</a>
+  <p id="message">이메일 인증이 완료되었습니다.<br>아래 버튼을 누르면 탱구 젬팝이 열리고 자동으로 로그인됩니다.<span class="english">Email verification is complete.<br>Tap the button below to open Tanggu Gem Pop and sign in automatically.</span></p>
+  <a id="open" class="button" href="#">탱구 젬팝 열기<span class="button-en">OPEN TANGGU GEM POP</span></a>
   <small>닉네임과 클래식 최고 점수가 계정에 동기화됩니다.<br>Your nickname and Classic best score will be synchronized.</small>
   <script>
     const hash=location.hash.startsWith('#')?location.hash.slice(1):'';
@@ -25,7 +25,7 @@
     const open=document.getElementById('open');
     const message=document.getElementById('message');
     if(error||!params.get('access_token')){
-      message.textContent=error?decodeURIComponent(error.replace(/\+/g,' ')):'로그인 링크가 만료되었거나 올바르지 않습니다. 앱에서 새 링크를 요청해 주세요.';
+      message.textContent=error?decodeURIComponent(error.replace(/\+/g,' ')):'로그인 링크가 만료되었거나 올바르지 않습니다. 앱에서 새 링크를 요청해 주세요. / The login link is invalid or expired. Please request a new link in the app.';
       message.className='error';open.hidden=true;
     }else{open.href='tanggugempop://login-callback#'+payload;}
   </script>
