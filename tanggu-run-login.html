@@ -1,15 +1,23 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>탱구런 이메일 로그인 · Tanggu Run Email Login</title>
-  <style>body{font-family:-apple-system,BlinkMacSystemFont,"Noto Sans KR",sans-serif;margin:0;min-height:100vh;display:grid;place-items:center;background:linear-gradient(#174aa6,#55b8eb);color:#17324a}main{width:min(86vw,520px);padding:34px 26px;text-align:center;background:#fffdf7;border:5px solid #69bfe4;border-radius:28px;box-shadow:0 16px 45px #092f6b55}h1{margin-top:0}.button{display:block;margin:24px auto 10px;padding:18px 20px;border-radius:18px;background:#dff1ff;color:#17324a;text-decoration:none;font-size:1.2rem;font-weight:800}.error{color:#a22626}small{display:block;margin-top:18px;color:#526b7c}</style>
+  <style>
+    body{font-family:-apple-system,BlinkMacSystemFont,"Noto Sans KR",sans-serif;margin:0;min-height:100vh;display:grid;place-items:center;background:linear-gradient(#174aa6,#55b8eb);color:#17324a}
+    main{width:min(86vw,520px);padding:30px 26px;text-align:center;background:#fffdf7;border:5px solid #69bfe4;border-radius:28px;box-shadow:0 16px 45px #092f6b55}
+    .mascot{width:112px;height:112px;object-fit:contain;display:block;margin:0 auto 8px}.studio{margin:0 0 5px;font-size:1rem;font-weight:800;color:#52748b;letter-spacing:.06em}h1{margin:0 0 14px}.button{display:block;margin:24px auto 10px;padding:18px 20px;border-radius:18px;background:#78d4ff;color:#17324a;text-decoration:none;font-size:1.2rem;font-weight:800}.hint{font-weight:700}.error{color:#a22626}small{display:block;margin-top:18px;color:#526b7c}
+  </style>
 </head>
 <body><main>
+  <img class="mascot" src="studio-sosim-face.png" alt="Studio Sosim 소심이">
+  <p class="studio">STUDIO SOSIM</p>
   <h1>탱구런 이메일 로그인</h1>
-  <p id="message">이메일 인증이 완료되었습니다. 아래 버튼을 눌러 탱구런으로 돌아가세요.</p>
-  <a id="open" class="button" href="#">탱구런 열기</a>
-  <small>Tanggu Run Email Login · Studio Sosim</small>
+  <p id="message">이메일 인증이 완료되었습니다.</p>
+  <p class="hint">아래 버튼을 누르면 앱이 열리고 자동 로그인됩니다.</p>
+  <a id="open" class="button" href="#">탱구 게임 로그인하기</a>
+  <small>Tanggu Run Email Login · 스튜디오 소심</small>
   <script>
     const hash = location.hash.startsWith('#') ? location.hash.slice(1) : '';
     const query = location.search.startsWith('?') ? location.search.slice(1) : '';
@@ -20,7 +28,10 @@
     const message = document.getElementById('message');
     if (error || !params.get('access_token')) {
       message.textContent = error ? decodeURIComponent(error.replace(/\+/g,' ')) : '로그인 링크가 만료되었거나 올바르지 않습니다. 앱에서 새 링크를 요청해 주세요.';
-      message.className = 'error'; open.hidden = true;
-    } else { open.href = 'tanggurun://login-callback#' + payload; }
+      message.className = 'error';
+      open.hidden = true;
+    } else {
+      open.href = 'tanggurun://login-callback#' + payload;
+    }
   </script>
 </main></body></html>
