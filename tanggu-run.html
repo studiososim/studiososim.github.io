@@ -16,22 +16,25 @@
   <section id="ko">
     <h2>한국어</h2><p>시행일: 2026년 9월 4일</p>
     <p>Studio Sosim은 탱구런의 계정, 기록 저장과 실시간 순위 기능을 제공하기 위해 다음 정보를 처리합니다.</p>
-    <ul><li>기기 저장: 최고 거리, 하트, 다이아, 장비·테마·보상, 언어와 소리 설정</li><li>Supabase 서버: 사용자 ID, 이메일 링크 로그인을 선택한 경우 이메일 주소, 닉네임, 최고 점수, 순위와 일일 보상 기록</li><li>iOS Game Center 로그인 선택 시: 탱구런 앱 전용 Game Center 식별자와 연결 상태</li></ul>
-    <p>이 정보는 계정 인증, 게스트 기록 이전, 기록 저장·복원, 실시간 순위, 닉네임 중복 방지, 부정 이용 방지와 안정성 개선에 사용됩니다. 이메일 로그인은 일회용 링크 방식이며 앱은 비밀번호를 수집하거나 저장하지 않습니다. 이 버전에는 광고 SDK와 광고 기능이 포함되어 있지 않습니다.</p>
-    <p>앱 설정의 <strong>계정 삭제</strong>에서 탱구런 계정과 이메일, 닉네임, 점수, 순위, 일일 기록 및 Game Center 연결을 영구 삭제할 수 있습니다. 앱을 사용할 수 없는 경우 <a href="tanggu-run-delete-account.html">외부 계정 삭제 요청 페이지</a>에서도 삭제를 요청할 수 있습니다. 삭제 후에는 복구할 수 없습니다.</p>
+    <ul><li>기기 저장: 현재 플레이 기록, 하트, 다이아, 장비·테마·보상, 언어와 소리 설정</li><li>Supabase 서버: 탱구런 전용 사용자 ID, 이메일 링크 로그인을 선택한 경우 이메일 주소, 닉네임, 최고 거리, 실시간 순위, 다이아, 하트·상점 구매 내역, 보상 기록, 가방, 착용 장비, 테마와 게임 진행 정보</li><li>iOS Game Center 로그인 선택 시: 탱구런 앱 전용 Game Center 식별자와 연결 상태</li><li>서비스 보안과 오류 진단을 위해 Supabase가 처리할 수 있는 IP 주소, 기기·앱 정보, 접속 기록 및 진단 정보</li></ul>
+    <p>앱은 처음부터 게스트로 시작합니다. 이메일 로그인은 비밀번호나 인증번호 없이 일회용 인증 링크를 사용합니다. 이메일의 링크로 Studio Sosim 로그인 웹페이지를 열고 ‘탱구런 열기’를 누르면 앱으로 돌아와 로그인됩니다. 로그인 연결 시 현재 게스트의 닉네임과 게임 기록을 해당 탱구런 계정에 병합하며, 직접 로그아웃하거나 계정을 삭제할 때까지 로그인 상태를 유지합니다. 탱구런 계정은 다른 Studio Sosim 게임 계정과 통합되지 않습니다.</p>
+    <p>이 정보는 계정 인증, 게스트 기록 이전, 기록 저장·복원, 실시간 순위, 닉네임 중복 방지, 구매와 보상 중복 지급 방지, 부정 이용 방지와 안정성 개선에 사용됩니다. 앱은 비밀번호를 수집하거나 저장하지 않습니다. 이 버전에는 광고 SDK와 광고 기능이 포함되어 있지 않습니다.</p>
+    <p>앱 설정의 <strong>계정 삭제</strong>에서 탱구런 계정과 이메일, 닉네임, 점수, 순위, 다이아, 구매·보상 기록, 가방·장비·테마·진행 정보 및 Game Center 연결을 영구 삭제할 수 있습니다. 앱을 사용할 수 없는 경우 <a href="tanggu-run-delete-account.html">외부 계정 삭제 요청 페이지</a>에서도 삭제를 요청할 수 있습니다. 삭제 후에는 복구할 수 없습니다.</p>
     <p>일부 이미지, 아이콘, 배경음악 및 효과음 제작에는 생성형 AI 보조 도구가 사용되었습니다. 탱구는 제작자의 오리지널 캐릭터이며 이용자 개인정보를 AI 제작 도구에 입력하지 않습니다.</p>
   </section>
   <section id="en" lang="en">
     <h2>English</h2><p>Effective September 4, 2026.</p>
     <p>Studio Sosim processes the following information to provide Tanggu Run accounts, saved records, and live rankings.</p>
-    <ul><li>On device: best distance, hearts, diamonds, equipment, themes, rewards, language, and sound settings.</li><li>On Supabase: user ID, email address when email-link login is selected, nickname, best score, rank, and daily reward history.</li><li>On iOS when Game Center login is selected: an app-specific Game Center identifier and connection status.</li></ul>
-    <p>This information is used for authentication, guest-record migration, saving and restoring records, live rankings, nickname uniqueness, abuse prevention, and reliability. Email login uses a one-time link; the app does not collect or store passwords. This version contains no advertising SDK or advertising feature.</p>
-    <p>Players can use <strong>Delete Account</strong> in Settings to permanently delete the Tanggu Run account, email, nickname, scores, ranks, daily records, and Game Center link. If the app is unavailable, use the <a href="tanggu-run-delete-account.html">external account deletion request page</a>. Deleted information cannot be restored.</p>
+    <ul><li>On device: current play records, hearts, diamonds, equipment, themes, rewards, language, and sound settings.</li><li>On Supabase: an app-specific user ID, email address when email-link login is selected, nickname, best distance, live rank, diamonds, heart and shop purchases, reward history, inventory, equipped items, themes, and game progress.</li><li>On iOS when Game Center login is selected: an app-specific Game Center identifier and connection status.</li><li>IP address, device/app information, access logs, and diagnostics that Supabase may process for security and reliability.</li></ul>
+    <p>The app starts automatically in guest mode. Email login uses a one-time verification link without a password or verification code. The link opens the Studio Sosim login webpage; tapping “Open Tanggu Run” returns to the app and signs the player in. Connecting a login merges the current guest nickname and game records into that Tanggu Run account. The session remains active until the player explicitly signs out or deletes the account. Tanggu Run accounts are separate from accounts for other Studio Sosim games.</p>
+    <p>This information is used for authentication, guest-record migration, saving and restoring records, live rankings, nickname uniqueness, preventing duplicate purchase or reward grants, abuse prevention, and reliability. The app does not collect or store passwords. This version contains no advertising SDK or advertising feature.</p>
+    <p>Players can use <strong>Delete Account</strong> in Settings to permanently delete the Tanggu Run account, email, nickname, scores, ranks, diamonds, purchase and reward history, inventory, equipment, themes, progress, and Game Center link. If the app is unavailable, use the <a href="tanggu-run-delete-account.html">external account deletion request page</a>. Deleted information cannot be restored.</p>
   </section>
   <section id="ja" lang="ja">
     <h2>日本語</h2><p>施行日：2026年9月4日</p>
-    <p>Studio Sosimは、アカウント、記録保存、リアルタイムランキングの提供に必要な情報を処理します。端末にはゲーム設定と進行情報を保存します。SupabaseにはユーザーID、メールリンクログイン選択時のメールアドレス、ニックネーム、最高スコア、順位、デイリー報酬履歴を保存します。Game Centerログイン選択時には、アプリ専用Game Center識別子と連携状態を処理します。</p>
-    <p>メールログインは一回限りのリンク方式で、アプリはパスワードを収集または保存しません。このバージョンに広告SDKと広告機能は含まれません。設定の「アカウント削除」、またはアプリを使用できない場合は<a href="tanggu-run-delete-account.html">外部削除リクエストページ</a>から、すべてのアカウント情報とゲーム記録の削除を依頼できます。削除後は復元できません。</p>
+    <p>Studio Sosimは、アカウント、記録保存、リアルタイムランキングの提供に必要な情報を処理します。Supabaseにはアプリ専用ユーザーID、メールリンクログイン選択時のメールアドレス、ニックネーム、最高距離、リアルタイム順位、ダイヤ、ハート・ショップ購入履歴、報酬履歴、所持品、装備、テーマ、進行状況を保存します。Game Centerログイン選択時には、アプリ専用Game Center識別子と連携状態を処理します。</p>
+    <p>アプリはゲストとして自動的に開始します。メールログインはパスワードや確認コードを使わない一回限りのリンク方式です。Studio Sosimのログインページで「Tanggu Runを開く」を押すとアプリに戻ってログインし、ゲストの記録を統合します。ログイン状態は明示的なログアウトまたはアカウント削除まで維持されます。Tanggu Runのアカウントは他のStudio Sosimゲームとは別です。</p>
+    <p>このバージョンに広告SDKと広告機能は含まれません。設定の「アカウント削除」、またはアプリを使用できない場合は<a href="tanggu-run-delete-account.html">外部削除リクエストページ</a>から、アカウント、メール、ニックネーム、スコア、順位、ダイヤ、購入・報酬履歴、所持品、装備、テーマ、進行状況、Game Center連携を削除できます。削除後は復元できません。</p>
   </section>
   <hr><p>Operator: Studio Sosim · Email: <a href="mailto:studiososim@gmail.com">studiososim@gmail.com</a></p>
   <p>© 2026 Studio Sosim. All rights reserved.</p>
