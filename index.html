@@ -7,6 +7,14 @@
   <meta name="description" content="Studio Sosim games, support, and privacy information">
   <title>Studio Sosim - Games &amp; Support</title>
   <style>
+    @font-face {
+      font-family: "Studio Sosim Noto Sans KR";
+      src: url("assets/fonts/NotoSansKR-Variable.ttf") format("truetype");
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: swap;
+    }
+
     :root {
       --sky: #3ca2e8;
       --sky-deep: #226bb4;
@@ -28,7 +36,7 @@
       margin: 0;
       min-height: 100vh;
       color: var(--ink);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", "Noto Sans JP", Arial, sans-serif;
+      font-family: "Studio Sosim Noto Sans KR", sans-serif;
       line-height: 1.72;
       background:
         radial-gradient(circle at 15% 10%, rgba(255,255,255,.55), transparent 24rem),
@@ -255,6 +263,16 @@
     </header>
 
     <div class="app-directory" aria-label="Studio Sosim apps">
+      <div class="app-card">
+        <h2>Tanggu Word Study · 탱구 영단어</h2>
+        <p><strong>EN:</strong> An offline English vocabulary app with daily 20-word sessions, pronunciation, favorites, and missed-word review. Learning records and settings stay on the device; there is no account, advertising, analytics, or tracking.</p>
+        <p><strong>KO:</strong> 하루 20단어 학습, 영어 발음, 즐겨찾기와 오답 복습을 제공하는 오프라인 영단어 앱입니다. 학습 기록과 설정은 기기에만 저장되며 계정, 광고, 분석과 추적 기능이 없습니다.</p>
+        <div class="app-actions">
+          <a href="tanggu-word-study.html">Privacy &amp; Support · 개인정보처리방침 및 지원</a>
+          <a href="mailto:studiososim@gmail.com">Support: studiososim@gmail.com</a>
+        </div>
+      </div>
+
       <div class="app-card">
         <h2>Tanggu 3 Match · 탱구 3매치</h2>
         <p><strong>EN:</strong> A bright triple-tile puzzle with endless stages and a fast 3-minute Time Attack. The game works offline without registration or login. Game progress, nickname, scores, hearts, diamonds, settings, and Time Attack records are stored on the device.</p>
