@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="탱구와 함께 점프하고 장애물을 피하는 액션 게임. App Store에서 탱구 런을 만나보세요.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>탱구 런 · Tanggu Run | Studio Sosim</title>
+  <style>
+    @font-face {
+      font-family: "Studio Sosim Noto Sans KR";
+      src: url("assets/fonts/NotoSansKR-Variable.ttf") format("truetype");
+      font-weight: 100 900;
+      font-display: swap;
+    }
+
+    :root {
+      font-family: "Studio Sosim Noto Sans KR";
+      color: #253042;
+      background: #f3f8ff;
+      line-height: 1.65;
+    }
+
+    body { margin: 0; }
+    main { max-width: 36rem; margin: 0 auto; padding: clamp(2rem, 9vw, 6rem) 1.5rem 3rem; }
+    h1 { margin: 0; font-size: clamp(2.25rem, 8vw, 4rem); line-height: 1.2; }
+    p { margin: 0.8rem 0; }
+    a { color: #144d91; }
+    a:focus-visible, button:focus-visible { outline: 3px solid #1461b5; outline-offset: 4px; }
+    .brand { font-weight: 650; }
+    .store {
+      display: inline-block;
+      margin: 1rem 0;
+      padding: 0.75rem 1.25rem;
+      border-radius: 0.75rem;
+      color: #fff;
+      background: #144d91;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .privacy { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #bdcddd; font-size: 0.9rem; }
+    .choices { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    button {
+      padding: 0.45rem 0.75rem;
+      border: 1px solid #647b94;
+      border-radius: 0.5rem;
+      color: #253042;
+      background: #fff;
+      font: inherit;
+      cursor: pointer;
+    }
+    button[aria-pressed="true"] { border-color: #144d91; background: #dbeafe; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="brand">Studio Sosim</p>
+    <h1>탱구 런 <span lang="en">Tanggu Run</span></h1>
+    <p>탱구와 함께 발판을 뛰어오르고, 밀려오는 용암과 파도를 피해 최고 기록에 도전하세요.</p>
+    <a class="store" id="app-store" href="https://apps.apple.com/app/tanggu-run/id6806089485">App Store에서 보기</a>
+    <p><a href="tanggu-run.html">게임 개인정보처리방침 및 지원</a></p>
+
+    <section class="privacy" aria-label="광고 성과 측정 설정">
+      <p>측정을 허용하면 이 페이지에서 App Store로 이동하는 클릭과 광고 유입 정보를 Google Ads에서 측정합니다. Google은 측정에 쿠키를 사용할 수 있습니다. <a href="https://policies.google.com/technologies/partner-sites?hl=ko">Google의 데이터 사용 안내</a></p>
+      <div class="choices">
+        <button type="button" id="allow-measurement" aria-pressed="false">측정 허용</button>
+        <button type="button" id="deny-measurement" aria-pressed="false">측정 거부</button>
+      </div>
+      <p id="measurement-status" role="status"></p>
+    </section>
+  </main>
+  <script src="assets/tanggu-run-ads.js" defer></script>
+</body>
+</html>
