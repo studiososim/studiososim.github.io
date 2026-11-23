@@ -8,7 +8,7 @@
   <title>Tanggu Word Study - Support &amp; Privacy</title>
   <style>
     @font-face{font-family:"Studio Sosim Noto Sans KR";src:url("assets/fonts/NotoSansKR-Variable.ttf") format("truetype");font-style:normal;font-weight:100 900;font-display:swap}
-    :root{--blue:#176fc0;--sky:#62c9f2;--paper:#fff;--ink:#173958;--line:#b9def2;--gold:#ffc83d;--soft:#eef9ff;font-family:"Studio Sosim Noto Sans KR",sans-serif}
+    :root{--blue:#176fc0;--sky:#62c9f2;--paper:#fff;--ink:#173958;--line:#b9def2;--gold:#ffc83d;--soft:#eef9ff;font-family:"Studio Sosim Noto Sans KR"}
     *{box-sizing:border-box}body{margin:0;font-family:inherit;line-height:1.65;color:var(--ink);background:linear-gradient(180deg,var(--blue),var(--sky))}
     main{width:min(920px,calc(100% - 28px));margin:auto;padding:max(24px,env(safe-area-inset-top)) 0 max(36px,env(safe-area-inset-bottom))}
     header{text-align:center;color:#fff;padding:12px 8px 22px}header h1{margin:0;font-size:clamp(2rem,7vw,3.5rem)}header p{margin:.35rem 0 0;font-weight:750}
@@ -26,29 +26,75 @@
   <article>
     <nav aria-label="Language"><button data-lang="en" aria-pressed="true">English</button><button data-lang="ko" aria-pressed="false">한국어</button></nav>
     <section id="en" class="active" lang="en">
-      <h1>Support &amp; Privacy Policy</h1><p class="effective">Effective: September 11, 2026</p>
-      <h2>App support</h2><p>Tanggu Word Study is an offline vocabulary-learning app with daily 20-word sessions, pronunciation, favorites, and missed-word review. If you need help, email <a href="mailto:studiososim@gmail.com">studiososim@gmail.com</a>.</p>
-      <h2>1. Information stored on the device</h2><p>The selected learning level, daily word set, study progress, answer counts, favorites, missed words, sound setting, and word-list position are stored locally on the device. They are used only to provide and continue the app's learning features.</p>
-      <h2>2. Information we do not collect</h2><p class="notice">The current version has no registration, login, online account, analytics SDK, advertising SDK, advertising, or in-app purchases. Studio Sosim does not receive or store a name, email address, phone number, postal address, contacts, photos, precise location, advertising identifier, study history, or device-local settings from the app.</p>
-      <h2>3. Network use and pronunciation</h2><p>The vocabulary data, meanings, images, interface, and learning functions are bundled with the app and work without an internet connection. English pronunciation uses a system voice installed on the device, so offline pronunciation can be limited when an English voice is unavailable. Opening this privacy page, a source page, a license page on the web, or an email link requires a network connection and is performed only after the user selects the link.</p>
-      <h2>4. Retention and deletion</h2><p>Local learning data remains on the device until the user resets all study progress, clears the app's stored data, or removes the app. Device backups may retain a copy according to the user's operating-system and backup settings. Studio Sosim cannot remotely view, restore, or delete this local data because it is not held on a Studio Sosim server.</p>
-      <h2>5. Tracking, sales, and sharing</h2><p>The app does not track users across other companies' apps or websites. Studio Sosim does not sell or share personal information from the app. The public policy website is hosted with GitHub Pages; GitHub may process ordinary web request information under its own privacy statement when the page is visited.</p>
-      <h2>6. Children and security</h2><p>The app does not ask children or other users to submit contact or account information. Parents or guardians should supervise device use where appropriate. Data processing is minimized by keeping learning records on the device.</p>
-      <h2>7. Dictionaries, graphics, licenses, and contact</h2><p>The app contains open-licensed dictionary materials. Source, attribution, modification, share-alike, Godot Engine, font, and asset notices are provided in the app's Open Licenses and Sources screen. Tanggu is an original Studio Sosim character. Some graphics were generated or refined with AI-assisted tools using Studio Sosim-provided references, then selected and edited by Studio Sosim.</p><p>Developer: Studio Sosim<br>Email: <a href="mailto:studiososim@gmail.com">studiososim@gmail.com</a><br><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">GitHub Privacy Statement</a></p>
-      <h2>8. Policy changes</h2><p>This policy may be updated if the app's features, data practices, services, or legal requirements change. The latest effective date and current policy will be posted on this page.</p>
+      <h1>Support &amp; Privacy Policy</h1>
+      <p class="effective">Last updated November 23, 2026</p>
+      <p class="notice"><strong>At a glance</strong> Your study history stays on your device. The app downloads public vocabulary entries from Supabase when connected. Google AdMob provides banners on study screens and optional rewarded ads.</p>
+
+      <h2>1. Who this policy applies to</h2>
+      <p>This policy covers Tanggu Word Study, an English vocabulary app operated by Studio Sosim. You can use the app without registering or signing in.</p>
+
+      <h2>2. Study information stored on your device</h2>
+      <p>Selected level, study lists and progress, correct and incorrect answers, favorites, and sound settings are kept on your device so you can continue studying.</p>
+
+      <h2>3. Online vocabulary and advertising</h2>
+      <ul>
+        <li><strong>Supabase vocabulary catalog.</strong> The app downloads public English words and Korean definitions and stores them on your device. Each request includes the last downloaded position and the number of entries requested. The service provider may process information such as IP address and request time to connect to and operate the service.</li>
+        <li><strong>Google AdMob.</strong> AdMob provides study-screen banners and rewarded ads you choose to watch. Google may process IP addresses and estimated coarse location, device or app-related identifiers, ad impressions, views and taps, and app activity, performance and error data to serve and measure ads, improve its service and prevent fraud.</li>
+        <li><strong>Ad privacy controls.</strong> The app is configured to disable Google's publisher ad personalization and publisher first-party ID. If Google's consent tool makes a choice available, you can change it in the app's ad privacy settings.</li>
+      </ul>
+      <p><a href="https://policies.google.com/privacy?hl=en" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a> · <a href="https://policies.google.com/technologies/partner-sites?hl=en" target="_blank" rel="noopener noreferrer">How Google uses partner-site and app data</a> · <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">Supabase Privacy Policy</a></p>
+
+      <h2>4. Retention, deletion and support</h2>
+      <p>Study history remains in the app's storage on your device. You can reset all study history in Settings or clear the app's stored data. App removal and backup behavior depend on your operating system and device settings.</p>
+      <p>Google and Supabase handle connection or ad information under their own policies and may process it in other countries where their services operate. To ask about privacy, access or deletion, contact <a href="mailto:studiososim@gmail.com">studiososim@gmail.com</a>. When you email support, we use your email address and message to respond and assist you.</p>
+
+      <h2>5. Pronunciation and external links</h2>
+      <p>Bundled words can be studied offline. Pronunciation uses the device's speech engine and follows your operating system and voice settings. An external site you choose to open applies its own privacy policy.</p>
+
+      <h2>6. Use by children</h2>
+      <p>Starting a lesson does not require account or contact information. The app requests the general-audiences (G) Google ad-content rating. Parents and guardians can use the support email above for privacy questions.</p>
+
+      <h2>7. Changes to this policy</h2>
+      <p>We will post updates on this page if our services or data practices change. <a href="assets/fonts/OFL-NotoSansKR.txt" target="_blank" rel="noopener noreferrer">Noto Sans KR font license</a></p>
+
+      <h2>8. Public support site</h2>
+      <p>This page is hosted by GitHub Pages. GitHub may process standard website request information when you visit. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub Privacy Statement</a></p>
       <a class="home-link" href="index.html">Studio Sosim home</a>
     </section>
     <section id="ko" lang="ko">
-      <h1>지원 및 개인정보처리방침</h1><p class="effective">시행일: 2026년 9월 11일</p>
-      <h2>앱 지원</h2><p>탱구 영단어는 하루 20단어 학습, 영어 발음, 즐겨찾기와 오답 복습을 제공하는 오프라인 단어 학습 앱입니다. 도움이 필요하면 <a href="mailto:studiososim@gmail.com">studiososim@gmail.com</a>으로 문의해 주세요.</p>
-      <h2>1. 기기에 저장되는 정보</h2><p>선택한 학습 단계, 오늘의 단어 묶음, 학습 진행, 정답·오답 횟수, 즐겨찾기, 틀린 단어, 효과음 설정과 단어 목록 위치는 이용자의 기기 내부에 저장됩니다. 이 정보는 앱의 학습 기능을 제공하고 이어서 학습하기 위해서만 사용됩니다.</p>
-      <h2>2. 수집하지 않는 정보</h2><p class="notice">현재 버전에는 회원가입, 로그인, 온라인 계정, 분석 SDK, 광고 SDK, 광고와 앱 내 결제가 없습니다. Studio Sosim은 앱을 통해 이용자의 이름, 이메일 주소, 전화번호, 주소, 연락처, 사진, 정확한 위치정보, 광고 식별자, 학습 기록 또는 기기 내부 설정을 전송받거나 서버에 저장하지 않습니다.</p>
-      <h2>3. 네트워크 이용과 영어 발음</h2><p>단어·뜻·그림·화면과 학습 기능은 앱에 포함되어 인터넷 없이 사용할 수 있습니다. 영어 발음은 기기에 설치된 시스템 음성을 사용하므로 영어 음성이 없는 기기에서는 오프라인 발음이 제한될 수 있습니다. 이 개인정보처리방침, 웹의 출처·라이선스 페이지 또는 이메일 링크는 이용자가 직접 선택한 경우에만 외부 웹페이지를 열며 인터넷 연결이 필요합니다.</p>
-      <h2>4. 보관 및 삭제</h2><p>로컬 학습 데이터는 이용자가 설정에서 모든 학습 기록을 초기화하거나 앱의 저장 데이터를 지우거나 앱을 삭제할 때까지 기기에 보관됩니다. 운영체제와 백업 설정에 따라 기기 백업에 사본이 남을 수 있습니다. 이 정보는 Studio Sosim 서버에 보관되지 않으므로 운영자가 원격으로 열람·복원·삭제할 수 없습니다.</p>
-      <h2>5. 추적·판매·공유</h2><p>앱은 다른 회사의 앱이나 웹사이트를 가로질러 이용자를 추적하지 않습니다. Studio Sosim은 앱에서 개인정보를 수집하여 판매하거나 공유하지 않습니다. 공개 개인정보처리방침은 GitHub Pages에서 제공되므로 페이지 방문 시 GitHub가 자체 방침에 따라 일반적인 웹 요청 정보를 처리할 수 있습니다.</p>
-      <h2>6. 아동과 보안</h2><p>앱은 아동을 포함한 이용자에게 연락처나 계정 정보 제출을 요구하지 않습니다. 필요한 경우 보호자가 기기 이용을 지도해 주세요. 학습 기록을 기기 안에만 보관하여 정보 처리를 최소화합니다.</p>
-      <h2>7. 사전·그래픽·라이선스·문의</h2><p>앱에는 공개 라이선스 사전 자료가 포함됩니다. 출처, 저작자 표시, 변경 내용, 동일조건변경허락, Godot Engine, 글꼴과 자산 고지는 앱의 ‘오픈 라이선스·전체 출처’ 화면에서 확인할 수 있습니다. 탱구는 Studio Sosim의 원작 캐릭터이며 일부 그래픽은 Studio Sosim 제공 참고자료를 바탕으로 AI 보조 도구로 생성·보정한 뒤 Studio Sosim이 선택하고 편집했습니다.</p><p>운영자: Studio Sosim<br>이메일: <a href="mailto:studiososim@gmail.com">studiososim@gmail.com</a><br><a href="https://docs.github.com/ko/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">GitHub 개인정보 보호정책</a></p>
-      <h2>8. 방침 변경</h2><p>앱 기능, 정보 처리, 외부 서비스 또는 관련 법령이 변경되면 이 방침을 수정할 수 있습니다. 최신 시행일과 방침은 이 페이지에 게시합니다.</p>
+      <h1>지원 및 개인정보처리방침</h1>
+      <p class="effective">최종 수정일 2026년 11월 23일</p>
+      <p class="notice"><strong>핵심 안내</strong> 학습 기록은 기기에 저장됩니다. 인터넷 연결 시 Supabase에서 공개 단어 목록을 내려받습니다. Google AdMob은 학습 화면에 배너 광고를 표시하고, 사용자가 선택하면 보상형 광고를 재생합니다.</p>
+
+  <h2>1. 운영자와 적용 범위</h2>
+  <p>이 방침은 Studio Sosim이 운영하는 영어 단어 학습 앱 ‘탱구의 영어공부’에 적용됩니다. 회원가입이나 로그인 없이 이용할 수 있습니다.</p>
+
+  <h2>2. 기기에 저장되는 학습 정보</h2>
+  <p>선택한 단계, 학습 목록과 진행 상태, 정답과 오답 기록, 즐겨찾기, 효과음 설정을 이어서 학습할 수 있도록 기기 내부에만 보관합니다.</p>
+
+  <h2>3. 온라인 단어 목록과 광고</h2>
+  <ul>
+    <li><strong>Supabase 단어 목록</strong> 앱은 인터넷에 연결되면 공개 영어 단어와 한국어 뜻을 내려받아 기기에 저장합니다. 목록 요청에는 마지막으로 내려받은 위치와 요청할 항목 수를 보냅니다. 서비스 제공자는 IP 주소와 요청 시각 등 연결 및 서비스 운영에 필요한 정보를 처리할 수 있습니다.</li>
+    <li><strong>Google AdMob</strong> 학습 화면의 배너 광고와 사용자가 선택한 보상형 광고를 제공합니다. Google은 광고 제공, 성과 측정, 서비스 개선 및 부정 사용 방지를 위해 IP 주소와 그로부터 추정한 대략적인 위치, 기기 또는 앱 관련 식별자, 광고 노출과 시청·탭 기록, 앱 실행·성능·오류 정보를 처리할 수 있습니다.</li>
+    <li><strong>광고 개인정보 설정</strong> 앱은 Google 광고의 게시자 개인 맞춤설정과 게시자 자체 식별자 사용을 끄도록 구성되어 있습니다. Google의 동의 도구가 선택지를 제공하는 경우 앱 설정의 ‘광고 개인정보 설정’에서 변경할 수 있습니다.</li>
+  </ul>
+  <p><a href="https://policies.google.com/privacy?hl=ko" target="_blank" rel="noopener noreferrer">Google 개인정보처리방침</a> · <a href="https://policies.google.com/technologies/partner-sites?hl=ko" target="_blank" rel="noopener noreferrer">Google 광고 데이터 이용 안내</a> · <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">Supabase 개인정보처리방침</a></p>
+
+  <h2>4. 보관, 삭제 및 문의</h2>
+  <p>학습 기록은 기기의 앱 저장 공간에 남습니다. 설정에서 ‘모든 학습 기록 초기화’를 선택하거나 앱 저장 데이터를 지워 삭제할 수 있습니다. 앱 제거와 백업에 따른 처리 범위는 운영체제와 기기 설정에 따릅니다.</p>
+  <p>Google과 Supabase는 각 방침에 따라 접속 또는 광고 관련 정보를 처리하며, 서비스 운영 지역에 따라 국외에서 처리할 수 있습니다. 개인정보 처리, 열람 또는 삭제에 관한 문의는 <a href="mailto:studiososim@gmail.com">studiososim@gmail.com</a>으로 보내 주세요. 이메일 문의를 받으면 회신과 지원에 필요한 범위에서 이메일 주소와 문의 내용을 처리합니다.</p>
+
+  <h2>5. 영어 발음과 외부 링크</h2>
+  <p>앱에 포함된 단어는 인터넷 연결 없이 학습할 수 있습니다. 영어 발음은 기기의 음성 엔진을 사용하며, 음성 처리 방식은 운영체제와 음성 설정에 따릅니다. 사용자가 선택해 연 외부 웹사이트에서는 해당 사이트의 개인정보처리방침이 적용됩니다.</p>
+
+  <h2>6. 아동 이용 안내</h2>
+  <p>학습을 시작할 때 연락처나 계정 정보 입력을 요구하지 않습니다. 광고는 Google의 전체 관람가(G) 콘텐츠 등급으로 제한하도록 요청합니다. 보호자는 개인정보 처리에 관한 문의를 위 이메일로 보낼 수 있습니다.</p>
+
+  <h2>7. 방침 변경</h2>
+  <p>정보 처리 방식이나 외부 서비스가 바뀌면 최신 내용을 이 페이지에 게시합니다. <a href="assets/fonts/OFL-NotoSansKR.txt" target="_blank" rel="noopener noreferrer">Noto Sans KR 글꼴 라이선스</a></p>
+
+      <h2>8. 공개 지원 사이트</h2>
+      <p>이 페이지는 GitHub Pages에서 제공합니다. 방문 시 GitHub가 웹 요청 정보를 처리할 수 있습니다. <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub 개인정보 보호정책</a></p>
       <a class="home-link" href="index.html">Studio Sosim 홈</a>
     </section>
   </article>
